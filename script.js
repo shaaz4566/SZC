@@ -119,7 +119,7 @@
   proceedWhatsApp?.addEventListener("click", () => {
     if (!whatsappMessage) return;
 
-    const whatsappNumber = "919400546609";
+    const whatsappNumber = "919400540669";
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
     // This is a direct user click, so the browser can navigate to WhatsApp reliably.
