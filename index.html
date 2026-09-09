@@ -3,10 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SZC — Software designed. Software built. Founded and developed by Shaaz Zakariya C.">
+  <meta name="description" content="SZC — Software designed. Software built. Founded and developed by Shaaz Zakariya C. Software design, programming, web development, UI/UX and creative technology from Kannur, Kerala.">
   <meta name="theme-color" content="#11110f">
+  <meta name="author" content="Shaaz Zakariya C">
+  <link rel="canonical" href="https://szcofficial.duckdns.org/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SZC — Software designed. Software built.">
+  <meta property="og:description" content="Software design, programming, web development, UI/UX and creative technology by Shaaz Zakariya C.">
+  <meta property="og:url" content="https://szcofficial.duckdns.org/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%2311110f'/%3E%3Ctext x='50' y='68' font-family='Arial Narrow,Arial' font-size='52' font-weight='800' letter-spacing='-5' text-anchor='middle' fill='%23f1f0ea'%3ESZC%3C/text%3E%3C/svg%3E">
+
   <title>SZC — Software designed. Software built.</title>
   <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "SZC",
+    "alternateName": "SZC Websites",
+    "description": "SZC is a software design and development brand founded and developed by Shaaz Zakariya C, creating software, websites, digital products and interactive experiences.",
+    "url": "https://szcofficial.duckdns.org/",
+    "founder": {
+      "@type": "Person",
+      "name": "Shaaz Zakariya C",
+      "jobTitle": "Software Designer & Programmer"
+    },
+    "areaServed": "Worldwide",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kannur",
+      "addressRegion": "Kerala",
+      "addressCountry": "IN"
+    },
+    "sameAs": ["https://www.instagram.com/szcwebsites/"],
+    "knowsAbout": ["Software Design", "Software Programming", "Web Development", "Front-End Development", "UI/UX Design", "Interactive Web Experiences", "Creative Technology"]
+  }
+  </script>
 </head>
 <body>
   <header class="topbar">
@@ -21,14 +57,16 @@
       <a href="#why-szc">07 Why SZC</a>
       <a href="#contact">08 Contact</a>
       <button class="request-button" id="requestNav" type="button">Start a project</button>
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark mode">◐</button>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark mode" aria-pressed="false">◐</button>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero container">
       <div class="hero-grid">
-       <h1 class="hero-title reveal"><span>WEBSITE</span></h1>
+        <h1 class="hero-title reveal">
+          <span class="hero-word" data-text="WEBSITE">WEBSITE</span>
+        </h1>
         <div class="hero-meta reveal">
           <div class="eyebrow mono">SZC / Shaaz Zakariya C</div>
           <p class="hero-description">
@@ -83,27 +121,44 @@
       </div>
 
       <div class="projects-grid">
-        <article class="project-card reveal">
+        <article class="project-card reveal" data-tilt>
           <div class="project-top">
             <div>
               <div class="project-index mono">001</div>
               <h2 class="project-name">Farm Fresh Honey</h2>
             </div>
-            <a class="project-url mono" href="www.farmfreshhoney.duckdns.org" target="_blank" rel="noopener noreferrer">↗</a>
+            <a class="project-url mono" href="https://farmfreshhoney.duckdns.org" target="_blank" rel="noopener noreferrer" aria-label="Open Farm Fresh Honey in a new tab">↗</a>
           </div>
 
           <div class="preview-wrap">
-            <iframe src="https://farmfreshhoney.duckdns.org" title="Farm Fresh Honey live website preview" loading="lazy" referrerpolicy="no-referrer"></iframe>
-            <a class="project-button project-preview-link" href="https://farmfreshhoney.duckdns.org" target="_blank" rel="noopener noreferrer">Open preview ↗</a>
+            <div class="preview-chrome mono"><i></i><i></i><i></i><span>farmfreshhoney.duckdns.org</span></div>
+            <div class="preview-screen">
+              <iframe src="https://farmfreshhoney.duckdns.org" title="Farm Fresh Honey live website preview" loading="lazy" referrerpolicy="no-referrer"></iframe>
+            </div>
           </div>
 
           <div class="project-info">
+            <a class="project-button project-preview-link" href="https://farmfreshhoney.duckdns.org" target="_blank" rel="noopener noreferrer">Open preview ↗</a>
             <p>A website made for Farm Fresh Honey, presented with a live in-site preview.</p>
             <div class="project-good">
               <span class="mono">MADE FOR FARM FRESH HONEY</span>
               <p>This website was made for Farm Fresh Honey so customers can discover the brand, explore its products and find the business online.</p>
             </div>
             <div class="tag-row"><span class="tag">Website</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          </div>
+        </article>
+
+        <article class="project-card project-card--open reveal">
+          <div class="project-top">
+            <div>
+              <div class="project-index mono">002</div>
+              <h2 class="project-name">Your project<br>next.</h2>
+            </div>
+            <span class="project-url mono">+</span>
+          </div>
+          <div class="project-info">
+            <p>SZC takes on websites, web applications, UI/UX design and browser-based software. Tell me what you want to build and it starts here.</p>
+            <button class="project-button project-open-request" type="button" data-open-request>Start a project ↗</button>
           </div>
         </article>
       </div>
@@ -133,6 +188,11 @@
     <section class="section container" id="technology">
       <div class="section-head"><div class="section-number mono">05 / TECHNOLOGY</div></div>
       <p class="statement reveal">HTML · CSS · JavaScript · Static web technologies · Browser-based applications · GitHub Pages</p>
+      <div class="tech-row reveal">
+        <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        <span class="tag">Static web</span><span class="tag">Browser apps</span><span class="tag">GitHub Pages</span>
+        <span class="tag">WebGL</span>
+      </div>
     </section>
 
     <section class="section philosophy container" id="philosophy">
@@ -178,7 +238,8 @@
       </div>
     </section>
   </main>
-<div class="modal-backdrop" id="requestModal" aria-hidden="true">
+
+  <div class="modal-backdrop" id="requestModal" aria-hidden="true">
     <div class="modal request-modal" role="dialog" aria-modal="true" aria-labelledby="requestModalTitle">
       <button class="modal-close" type="button" data-close-modal aria-label="Close request form">×</button>
 
