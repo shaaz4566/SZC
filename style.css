@@ -4,17 +4,11 @@
    ============================================================ */
 
 :root {
-  --bg:#11110f; --surface:#181815; --surface-2:#1d1d19; --text:#f1f0ea;
-  --muted:#989892; --line:rgba(241,240,234,.16); --soft-line:rgba(241,240,234,.08);
-  --gold:#b7a16c;
-  --panel:rgba(24,24,21,.55);
-  --max:1440px; --pad:clamp(20px,4vw,64px); --ease:cubic-bezier(.2,.75,.2,1);
-}
-body.light {
   --bg:#f1f0ea; --surface:#e8e7e0; --surface-2:#deddd5; --text:#11110f;
   --muted:#676762; --line:rgba(17,17,15,.16); --soft-line:rgba(17,17,15,.08);
   --gold:#8a7440;
   --panel:rgba(232,231,224,.6);
+  --max:1440px; --pad:clamp(20px,4vw,64px); --ease:cubic-bezier(.2,.75,.2,1);
 }
 
 *{box-sizing:border-box}
@@ -39,17 +33,16 @@ a{color:inherit;text-decoration:none} button{font:inherit;color:inherit}
 }
 .nav{display:flex;align-items:center;gap:7px;pointer-events:auto;max-width:calc(100vw - 150px);overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
 .nav::-webkit-scrollbar{display:none}
-.nav a,.theme-toggle,.request-button{
+.nav a,.request-button{
   flex:0 0 auto;border:1px solid var(--line);
   background:color-mix(in srgb,var(--bg) 72%,transparent);
   backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
   border-radius:999px;padding:8px 11px;font-size:11px;white-space:nowrap;
   transition:transform .25s var(--ease),border-color .25s,color .25s;
 }
-.nav a:hover,.theme-toggle:hover,.request-button:hover{transform:translateY(-2px);border-color:var(--text)}
+.nav a:hover,.request-button:hover{transform:translateY(-2px);border-color:var(--text)}
 .nav a.active{border-color:var(--text);color:var(--text)}
 .nav a.active::before{content:"";display:inline-block;width:4px;height:4px;border-radius:50%;background:var(--gold);margin-right:6px;vertical-align:middle}
-.theme-toggle{cursor:pointer}
 
 /* ---------- Hero ----------------------------------------- */
 .hero{min-height:100svh;display:flex;align-items:flex-end;padding-top:130px;padding-bottom:clamp(45px,8vh,100px);position:relative}
@@ -268,7 +261,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .topbar{padding:12px var(--pad)}
   .brand{font-size:28px}
   .nav{max-width:calc(100vw - 92px);gap:5px}
-  .nav a,.theme-toggle,.request-button{padding:7px 9px;font-size:10px}
+  .nav a,.request-button{padding:7px 9px;font-size:10px}
   .list-grid{grid-template-columns:1fr}
   .section-head{margin-bottom:45px}
   .project-top{min-height:auto}

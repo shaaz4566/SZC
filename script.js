@@ -11,31 +11,8 @@
   const motionOK = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ---------------------------------------------------------
-     1. Theme
+     Site is permanently light theme.
      --------------------------------------------------------- */
-  const toggle = document.getElementById("themeToggle");
-  const savedTheme = localStorage.getItem("szc-theme");
-  const themeListeners = [];
-
-  if (savedTheme === "light") body.classList.add("light");
-
-  const isLight = () => body.classList.contains("light");
-  const syncTheme = () => {
-    const light = isLight();
-    toggle?.setAttribute("aria-pressed", String(light));
-    document.querySelector('meta[name="theme-color"]')
-      ?.setAttribute("content", light ? "#f1f0ea" : "#11110f");
-    themeListeners.forEach((fn) => fn(light));
-  };
-
-  if (toggle) {
-    toggle.addEventListener("click", () => {
-      body.classList.toggle("light");
-      localStorage.setItem("szc-theme", isLight() ? "light" : "dark");
-      syncTheme();
-    });
-  }
-
   /* ---------------------------------------------------------
      2. Reveal on scroll
      --------------------------------------------------------- */
@@ -201,7 +178,6 @@
      6. Init
      --------------------------------------------------------- */
   updateChrome();
-  syncTheme();
   window.addEventListener("scroll", updateChrome, { passive: true });
   window.addEventListener("resize", updateChrome);
   window.addEventListener("load", updateChrome);
