@@ -7,6 +7,8 @@
 (() => {
   "use strict";
 
+  document.documentElement.classList.add("js");
+
   const body = document.body;
   const motionOK = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
