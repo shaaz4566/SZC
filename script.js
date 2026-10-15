@@ -36,10 +36,7 @@
   /* ---------------------------------------------------------
      3. Nav highlight on scroll
      --------------------------------------------------------- */
-  const sectionIds = [
-    "about", "work", "capabilities", "areas",
-    "technology", "philosophy", "why-szc", "contact"
-  ];
+  const sectionIds = ["about", "services", "work", "technology", "philosophy", "why-szc", "process", "faq", "contact"];
   const sections = sectionIds
     .map((id) => document.getElementById(id))
     .filter(Boolean);

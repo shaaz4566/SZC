@@ -1,0 +1,17 @@
+{
+  "name": "SZC Websites",
+  "short_name": "SZC",
+  "description": "SZC Websites is a web design and development studio. We build fast, SEO-ready websites and handle your domain, hosting and maintenance, for clients worldwide.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f1f0ea",
+  "theme_color": "#f1f0ea",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
