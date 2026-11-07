@@ -1,7 +1,18 @@
-# SZC Websites
+# SZC — Digital Solutions
+SZC is an independent digital solutions company founded by Shaaz Zakariya C, based in Kannur, Kerala, India and working with clients worldwide.
 
-> Web design and development studio founded by Shaaz Zakariya C. Services: web design, website development, domain registration, hosting and maintenance. Works with clients worldwide.
+## Capabilities
+- Logo design and brand identity
+- Website design and development
+- E-commerce websites and landing pages
+- Web application and custom software development
+- iOS and Android mobile application development
+- Business dashboards and internal systems
+- AI automation and integrations
+- Domain registration, hosting setup, and website maintenance
 
-- Website: https://szcwebsites.in/
-- WhatsApp: https://wa.me/919400540669
-- Instagram: https://www.instagram.com/shaazzakariyac/
+## Website
+https://szcwebsites.in/
+## Contact
+WhatsApp: https://wa.me/919400540669
+Instagram: https://www.instagram.com/shaazzakariyac/
